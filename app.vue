@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import 'assets/style/index.css'
+import MiniApp from '~/components/MiniApp.vue'
 </script>
 
 <template>
-  <div>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtPage />
+  <ClientOnly>
+    <MiniApp />
+  </ClientOnly>
 </template>
