@@ -27,6 +27,10 @@ import {
         <DrawerTitle>Are you absolutely sure?</DrawerTitle>
         <DrawerDescription>This action cannot be undone.</DrawerDescription>
       </DrawerHeader>
+      <div class="max-w-[400px] px-6 m-auto">
+        <Label for="picture">Picture</Label>
+        <Input id="picture" type="file" />
+      </div>
       <DrawerFooter>
         <Button>Submit</Button>
         <DrawerClose>
