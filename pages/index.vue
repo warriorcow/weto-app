@@ -1,5 +1,40 @@
+<script setup lang="ts">
+definePageMeta({
+  colorMode: 'dark',
+})
+
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from '@/components/ui/drawer'
+</script>
+
 <template>
-  <section>
-    <h1>Hello Web Mini App</h1>
-  </section>
+  <Drawer>
+    <DrawerTrigger>
+      <Button class="dark:color-border" variant="outline">
+        Open Drawer <Icon name="mdi:github" />
+      </Button>
+    </DrawerTrigger>
+    <DrawerContent>
+      <DrawerHeader>
+        <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+        <DrawerDescription>This action cannot be undone.</DrawerDescription>
+      </DrawerHeader>
+      <DrawerFooter>
+        <Button>Submit</Button>
+        <DrawerClose>
+          <Button variant="outline">
+            Cancel
+          </Button>
+        </DrawerClose>
+      </DrawerFooter>
+    </DrawerContent>
+  </Drawer>
 </template>

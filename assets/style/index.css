@@ -1,0 +1,35 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #1c1c22;
+  
+  --muted: #f0f4f8;
+  --muted-foreground: #677287;
+  
+  --card: #ffffff;
+  --card-foreground: #1c1c22;
+  
+  --popover: #ffffff;
+  --popover-foreground: #1c1c22;
+  
+  --border: #d9e2ef;
+  
+  --input: #d9e2ef;
+  
+  --primary: #1c1c22;
+  --primary-foreground: #f8fbff;
+  
+  --secondary: #f0f4f8;
+  --secondary-foreground: #1c1c22;
+  
+  --accent: #f0f4f8;
+  --accent-foreground: #1c1c22;
+  
+  --destructive: #ff0000;
+  --destructive-foreground: #f8fbff;
+  
+  --ring: #7d96b8;
+  
+  --radius: 0.5rem;
+}
