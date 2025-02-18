@@ -16,6 +16,7 @@ import {
 </script>
 
 <template>
+  <Map />
   <Drawer>
     <DrawerTrigger>
       <Button class="dark:color-border" variant="outline">
